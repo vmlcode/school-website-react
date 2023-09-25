@@ -1,10 +1,30 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { Root } from './routes/root';
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root/>,
+    children: [
+      {
+        path: "/",
+        element: <><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maiores, sunt consectetur molestiae pariatur, recusandae deleniti quisquam ipsam sequi unde fugiat sapiente saepe architecto fugit ut neque nesciunt maxime autem distinctio? Tempora, expedita. Corrupti odio a, culpa qui praesentium eos aliquid vel omnis debitis obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis nemo culpa aperiam nulla dolorum veniam omnis iste numquam aut aliquid, nihil magnam voluptatum temporibus animi, minima commodi, velit nesciunt iusto rem sed harum. Quod, nobis optio ad quibusdam aspernatur aut mollitia corporis nostrum explicabo et consequuntur repellendus nulla placeat nisi id quas quisquam ipsa quasi debitis amet, fuga voluptatum autem. Eum optio nihil laboriosam, consequuntur officiis at. Expedita temporibus maxime ducimus asperiores suscipit accusantium sapiente accusamus eum mollitia ad! Placeat excepturi modi quia, dignissimos neque, sint quas illum eius natus recusandae repudiandae, quo deleniti! Iure voluptas asperiores corrupti dolorem ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit officiis mollitia, illo esse nobis repudiandae aut atque corporis vero assumenda tempore obcaecati vitae magnam, quisquam ipsa odit provident minima sapiente dolorem. Vitae numquam explicabo adipisci a magni quo reprehenderit sunt exercitationem tenetur eius cum iure, culpa reiciendis ab, sit natus magnam quaerat, ipsum illum aliquid ullam. Esse voluptas illum eaque nobis inventore! Sit nostrum dolorem consequuntur temporibus vitae assumenda harum ab molestiae commodi, unde expedita? Veritatis blanditiis laborum unde ipsum, saepe similique optio officia vero enim sequi est dolores, officiis soluta quos libero magni odio? Tempore accusantium quasi perspiciatis eum commodi doloribus maxime? Eos aliquam accusamus beatae similique! Vitae, consectetur sint blanditiis recusandae nobis corporis deserunt perferendis cupiditate a, quasi, earum distinctio commodi nemo consequatur et optio laboriosam enim? Expedita iure ipsa mollitia possimus cupiditate voluptatibus fugit nisi enim laborum, voluptatum voluptas ullam molestias pariatur unde aut a accusantium tempore animi assumenda! Maxime nisi labore enim earum reiciendis facilis vitae repellat ipsam, laudantium rem. Numquam eveniet quod iste unde, cum, ipsa eaque rerum voluptates earum delectus dolorum deleniti nesciunt facilis? Numquam excepturi sint dolorem aspernatur odio cupiditate culpa eligendi, adipisci dicta velit dolorum dolore illum doloribus voluptatem id quae consequatur? Placeat quo eligendi aliquid vel debitis. Dicta animi dolores totam id omnis sed sit rem harum numquam. Corrupti est autem dolorem, neque blanditiis accusamus officiis obcaecati consequatur doloremque optio minus sunt cupiditate ipsa commodi esse repudiandae pariatur nesciunt. Ut quisquam in amet, dolor neque labore odit nihil praesentium? Repudiandae ratione recusandae, sed sapiente inventore odit omnis suscipit maxime doloremque eveniet. Reprehenderit iste minima eos quod modi sit repellat non ut. Harum quis facere architecto quas quibusdam error recusandae iusto et doloribus odit incidunt, saepe corrupti eos excepturi. Debitis consequatur veritatis nisi nemo reiciendis dignissimos eligendi tempora quidem similique nulla id aliquam minus corrupti sint atque assumenda, laborum dolores sed recusandae eum. Placeat ipsam autem veniam laborum in, repudiandae natus modi non. Totam eius molestiae culpa. Mollitia sapiente, enim, doloremque reiciendis officia reprehenderit consequatur obcaecati voluptates fugit quod in! Suscipit, odio est autem, omnis iure qui necessitatibus id sequi impedit, a iste quam nemo modi natus culpa quisquam sit molestias enim distinctio quibusdam. Dolorum dolore exercitationem similique magni, minus labore saepe sequi suscipit tenetur rem quam, maiores libero est inventore atque non deleniti quae corrupti voluptatem eum dolorem facere hic error? Voluptates, unde eveniet. Sit adipisci distinctio enim voluptatem porro quae placeat aut, veritatis dignissimos voluptas ullam, ut consequuntur rerum accusamus veniam itaque temporibus sint quasi, incidunt cumque consequatur tenetur? Eum, soluta nobis? Officiis dolore voluptate architecto quisquam, eveniet perspiciatis adipisci? Totam enim deserunt quod assumenda fugiat magnam minus autem vitae! Alias incidunt ad perspiciatis consequatur in quos iusto odit!</p></>,
+      },
+      {
+        path: "/calendar",
+        element: <><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maiores, sunt consectetur molestiae pariatur, recusandae deleniti quisquam ipsam sequi unde fugiat sapiente saepe architecto fugit ut neque nesciunt maxime autem distinctio? Tempora, expedita. Corrupti odio a, culpa qui praesentium eos aliquid vel omnis debitis obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis nemo culpa aperiam nulla dolorum veniam omnis iste numquam aut aliquid, nihil magnam voluptatum temporibus animi, minima commodi, velit nesciunt iusto rem sed harum. Quod, nobis optio ad quibusdam aspernatur aut mollitia corporis nostrum explicabo etllam, ut consequuntur rerum accusamus veniam itaque temporibus sint quasi, incidunt cumque consequatur tenetur? Eum, soluta nobis? Officiis dolore voluptate architecto quisquam, eveniet perspiciatis adipisci? Totam enim deserunt quod assumenda fugiat magnam minus autem vitae! Alias incidunt ad perspiciatis consequatur in quos iusto odit!</p></>,
+      },
+    ],
+  },
+]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router} />
   </React.StrictMode>,
 )
