@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { Root } from './routes/root';
 import Home from './routes/home';
+import { Calendar } from './routes/calendar';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/calendar",
-        element: <><p>In devlopment for 2024</p></>,
+        element: <Calendar/>,
       },
       {
         path: "/homework/:id",
