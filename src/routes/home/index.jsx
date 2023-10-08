@@ -64,6 +64,7 @@ export default function Home() {
         {showDates.map((obj) => {
           return <CardItem key={obj.id} {...obj} listDescription='true'/>;
         })}
+        <section className="hidden sm:flex">
         <div>
           <p>Horario de clases</p>
           <section className="flex gap-12 text-xs">
@@ -126,9 +127,10 @@ export default function Home() {
             </div>
           </section>
         </div>
+        </section>
       </div>
       
-      <div className="h-[10rem] w-[25rem] p-3 hover:p-7 text-sm rounded-xl flex-col grow-0 mt-3 transition-all flex sm:hidden">
+      <div className="p-3 hover:p-7 text-sm rounded-xl flex-col grow-0 mt-3 transition-all flex sm:hidden">
         <p className="text-2xl">Proxima tarea</p>
         <div className="mx-3 text-sm ">
         {/* <Link><p>suma de polinomios a la 3 jp es un niño ardilla</p></Link> */}
