@@ -87,6 +87,7 @@ export const Root = () => {
         </Link>
       </li>
       <li className="nav-item">
+        <Link to='/exams'>
         <a href="#" className="nav-link">
           <svg
             aria-hidden="true"
@@ -108,11 +109,13 @@ export const Root = () => {
           </svg>
           <span className="link-text">Examenes</span>
         </a>
+        </Link>
       </li>
 
       
 
       <li className="nav-item">
+        <Link to='/homeworks'>
         <a href="#" className="nav-link">
           <svg
             aria-hidden="true"
@@ -134,6 +137,7 @@ export const Root = () => {
           </svg>
           <span className="link-text">Tareas</span>
         </a>
+        </Link>
       </li>
 
      

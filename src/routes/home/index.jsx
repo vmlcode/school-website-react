@@ -25,17 +25,17 @@ function typeFilterHomework(obj) {
   return obj.type === "homework"
 }
 
-console.log(homeworks);
+
 
 function sortHomeworksByDate() {
-  const sortedByDate = exams.sort((a, b) => {
+  const sortedByDate = homeworks.sort((a, b) => {
     return new Date(a.date).getTime() - 
         new Date(b.date).getTime()
   })
   return sortedByDate
 }
 let sortedHomeworks = sortHomeworksByDate()
-let futureHomeworksDates = sortedHomeworks.filter(obj => new Date(obj.date) >= today)
+const futureHomeworksDates = sortedHomeworks.filter(obj => new Date(obj.date) >= today)
 const showHomeworkdates = futureHomeworksDates.slice(0, 2)
 
 export default function Home() {
