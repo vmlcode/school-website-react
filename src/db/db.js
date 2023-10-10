@@ -37,7 +37,7 @@ export const db = [
       class: 'Ingles',
       name: "Revision del texto: Pasado simple y Expresiones relacionadas con estados animicos ",
       description: "Prueba de Ingles",
-      date: '2023-10-11T16:30:00.000Z'
+      date: '2023-11-10T16:30:00.000Z'
     },
     {
       id: 6,
