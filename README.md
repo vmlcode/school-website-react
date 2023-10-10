@@ -12,6 +12,7 @@ Esta es una plantilla para un sitio web de publicación de deberes y fechas de e
 Eres libre de usar el código como plantilla sin darnos crédito, pero si quieres listarnos como autores te lo agradeceríamos.
 
 @vmlcode
+@JPBlondell 
 
 # Install & Setup
 
